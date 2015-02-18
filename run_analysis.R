@@ -1,5 +1,6 @@
 run_analysis<-function() {
   library(plyr)
+  
   #test if data directory is present
   if(!file.exists("./UCI HAR Dataset")) {
     msg<-"Dataset not present in working directory: exiting"
@@ -18,9 +19,9 @@ run_analysis<-function() {
   rm(list=c("xtrain","ytrain","xtest","ytest"))
   
   #give names to columns
-  names<-read.table("./UCI HAR Dataset/features.txt")
-  names<-as.character(names[,2])
-  names<-c("activity",names)
+  cnames<-read.table("./UCI HAR Dataset/features.txt")
+  cnames<-as.character(cnames[,2])
+  cnames<-c("activity",cnames)
   colnames(xall)<-names
   
   #substitute activity code with description
