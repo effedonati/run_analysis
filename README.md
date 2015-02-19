@@ -29,10 +29,11 @@ wich return the dataset with the average of each variable for each activity and 
 FUNCTION USAGE:
 
    __x<-run\_analysis()__ assign to x the dataset (means) created from the Samsung data
+    with the average of each variable for each activity and each subject 
    
    __x<-run\_analysis(TRUE)__ or 
    __x<-run\_analysis(writemeans=TRUE)__ as above, but create a file "datasetmeans.txt" 
-   with the average of each variable for each activity and each subject 
+  
 
 REQUIRED:
 
