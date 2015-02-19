@@ -2,9 +2,13 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
 ============================================================================================
 
 ##(Project of Coursera's Getting and Clearing Data Course)
+--------------------------------------------------
 
+ ###NOTE: all fields are the average of each sample grouped by activity and  subject
+
+--------------------------------------------------
 - Subject    
-   INTEGER: FROM 1 TO 30, IDENTIFIES THE VOLUNTEER
+   STRING: FROM Subject\_1 TO Subject\_30, IDENTIFIES THE VOLUNTEER
                      
 - Activity    
    STRING: TYPE OF ACTIVITY - CAN BE ONE OF
