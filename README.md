@@ -21,14 +21,14 @@ __CodeBook.md__ contain an explanation of the data columns.
 
 
 __run_analysis.R__ is a script conataining a single function __run_analysis()__
-wich return the tidy dataset.
+wich return the dataset with the average of each variable for each activity and each subject .
 
 
 -------------------------------------------------  
 
 FUNCTION USAGE:
 
-   __x<-run\_analysis()__ assign to x the dataset created from the Samsung data
+   __x<-run\_analysis()__ assign to x the dataset (means) created from the Samsung data
    
    __x<-run\_analysis(TRUE)__ or 
    __x<-run\_analysis(writemeans=TRUE)__ as above, but create a file "datasetmeans.txt" 
@@ -58,9 +58,12 @@ These files are merged to create a single data set with test and train sets, wit
 of a "Subject" column wich report the code of the volunteer to wich belong the sample
 and an "Activity" column containing the activity code.
 
-After doing this the function assign names to columns according to the file features.txt and 
-transform Activity codes to strings (from activity_labels.txt).
+After doing this the function assign names to columns according to the file features.txt,
+transform Activity codes to strings (from activity_labels.txt) and add the string "Subject" to every
+subject code (for more readability of the final set).
 Then select only the columns relevant to our dataset (means ans standard deviations; i have considered relevant only the columns wich end in mean(),std(),mean()-XYZ,std()-XYZ).
 
-If the function parameter writemeans is set to TRUE (default is FALSE),
-an independent data set is created with the average of each variable for each activity and each subject and then is saved with a write.table (with row.names=FALSE as required) in the current directory as "datasetmeans.txt".
+From these data an independent data set is created with the average of each variable for each activity and each subject; if the function parameter writemeans is set to TRUE (default is FALSE),
+ the dataset is saved with a write.table (with row.names=FALSE as required) in the current directory as "datasetmeans.txt".
+
+The function return this final dataset

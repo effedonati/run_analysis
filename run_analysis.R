@@ -5,10 +5,11 @@
 ##
 ## USAGE:
 ## x<-run_analysis()                 # assign to x the dataset created from the Samsung data
-## x<-run_analysis(TRUE)             # or
-## x<-run_analysis(writemeans=TRUE)  # as above,but create a file "datasetmeans.txt" with 
-##                                   # the average of each variable for each activity and 
+##                                   # with the average of each variable for each activity and 
 ##                                   # each subject   
+## x<-run_analysis(TRUE)             # or
+## x<-run_analysis(writemeans=TRUE)  # as above,but create also a file "datasetmeans.txt" 
+##                                   # with the function write.table
 ##
 
 run_analysis<-function(writemeans=FALSE) {
@@ -41,17 +42,19 @@ run_analysis<-function(writemeans=FALSE) {
   
   # substitute activity code with description
   actdesc<-read.table("./UCI HAR Dataset/activity_labels.txt")
-  dset<-mutate(dset,Activity=actdesc[Activity,2])
+  dset<-mutate(dset,Activity=actdesc[Activity,2],Subject=paste("Subject",Subject,sep="_"))
   
   #extract only  the measurements on the mean and standard deviation
   dset<-dset[,grep("Subject|Activity|mean.)|std.",names(dset))]
-  # if the function parameter "wtitemeans" is TRUE (default is FALSE)
+  
   # create the data set with the average of each variable for each 
   # activity and each subject.
+  dsetmeans<-lapply(dset[,3:68],function(x) tapply(x,list(dset$Activity,dset$Subject),mean))
+
+  # if the function parameter "wtitemeans" is TRUE (default is FALSE) save the dataset
   if(writemeans) {
-      dsetmeans<-lapply(dset[,3:68],function(x) tapply(x,list(dset$Activity,dset$Subject),mean))
       write.table(dsetmeans,file="./datasetmeans.txt",row.names=FALSE)
   }
-  dset
+  dsetmeans
   
 }
