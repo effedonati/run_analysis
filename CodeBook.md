@@ -4,7 +4,8 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
 ##(Project of Coursera's Getting and Clearing Data Course)
 --------------------------------------------------
 
- ###NOTE: all fields are the average of each sample grouped by activity and  subject
+ ### NOTE: all fields are the average of each sample grouped by activity and  subject;
+ ### so if the dataset is stored in the var x 
 
 --------------------------------------------------
 - Subject    
@@ -19,201 +20,201 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
      - STANDING
      - LAYING
            
-- tBodyAcc-mean()-X   
+- tBodyAcc\_mean\_X   
    NUMERIC: BODY ACCELEROMETER X AXIAL SIGNAL - MEAN
          
-- tBodyAcc-mean()-Y          
+- tBodyAcc\_mean\_Y          
    NUMERIC: BODY ACCELEROMETER Y AXIAL SIGNAL - MEAN
 
-- tBodyAcc-mean()-Z           
+- tBodyAcc\_mean\_Z           
    NUMERIC: BODY ACCELEROMETER Z AXIAL SIGNAL - MEAN
 
-- tBodyAcc-std()-X           
+- tBodyAcc\_std\_X           
    NUMERIC: BODY ACCELEROMETER X AXIAL SIGNAL - STANDARD DEVIATION
 
-- tBodyAcc-std()-Y            
+- tBodyAcc\_std\_Y            
    NUMERIC: BODY ACCELEROMETER Y AXIAL SIGNAL - STANDARD DEVIATION
 
-- tBodyAcc-std()-Z           
+- tBodyAcc\_std()\_Z           
    NUMERIC: BODY ACCELEROMETER Z AXIAL SIGNAL - STANDARD DEVIATION
 
-- tGravityAcc-mean()-X        
+- tGravityAcc\_mean\_X        
    NUMERIC: GRAVITY ACCELEROMETER X AXIAL SIGNAL - MEAN
 
-- tGravityAcc-mean()-Y       
+- tGravityAcc\_mean\_Y       
    NUMERIC: GRAVITY ACCELEROMETER Y AXIAL SIGNAL - MEAN
 
-- tGravityAcc-mean()-Z        
+- tGravityAcc\_mean\_Z        
    NUMERIC: GRAVITY ACCELEROMETER Z AXIAL SIGNAL - MEAN
 
-- tGravityAcc-std()-X        
+- tGravityAcc\_std\_X        
    NUMERIC: GRAVITY ACCELEROMETER X AXIAL SIGNAL - STANDARD DEVIATION
 
-- tGravityAcc-std()-Y         
+- tGravityAcc\_std\_Y         
    NUMERIC: GRAVITY ACCELEROMETER Y AXIAL SIGNAL - STANDARD DEVIATION
 
-- tGravityAcc-std()-Z        
+- tGravityAcc\_std\_Z        
    NUMERIC: GRAVITY ACCELEROMETER Z AXIAL SIGNAL - STANDARD DEVIATION
 
-- tBodyAccJerk-mean()-X       
+- tBodyAccJerk\_mean\_X       
    NUMERIC: BODY ACCELEROMETER X AXIAL SIGNAL DERIVATION IN TIME - MEAN    
 
-- tBodyAccJerk-mean()-Y      
+- tBodyAccJerk\_mean\_Y      
    NUMERIC: BODY ACCELEROMETER Y AXIAL SIGNAL DERIVATION IN TIME - MEAN    
 
-- tBodyAccJerk-mean()-Z       
+- tBodyAccJerk\_mean\_Z       
    NUMERIC: BODY ACCELEROMETER Z AXIAL SIGNAL DERIVATION IN TIME - MEAN    
 
-- tBodyAccJerk-std()-X       
+- tBodyAccJerk\_std\_X       
    NUMERIC: BODY ACCELEROMETER X AXIAL SIGNAL DERIVATION IN TIME - STANDARD DEVIATION    
 
-- tBodyAccJerk-std()-Y        
+- tBodyAccJerk\_std\_Y        
    NUMERIC: BODY ACCELEROMETER Y AXIAL SIGNAL DERIVATION IN TIME - STANDARD DEVIATION    
 
-- tBodyAccJerk-std()-Z       
+- tBodyAccJerk\_std\_Z       
    NUMERIC: BODY ACCELEROMETER Z AXIAL SIGNAL DERIVATION IN TIME - STANDARD DEVIATION    
 
-- tBodyGyro-mean()-X          
+- tBodyGyro\_mean\_X          
    NUMERIC: GYROSCOPE X AXIAL SIGNAL - MEAN
 
-- tBodyGyro-mean()-Y         
+- tBodyGyro\_mean\_Y         
    NUMERIC: GYROSCOPE Y AXIAL SIGNAL - MEAN
 
-- tBodyGyro-mean()-Z          
+- tBodyGyro\_mean\_Z          
    NUMERIC: GYROSCOPE Z AXIAL SIGNAL - MEAN
 
-- tBodyGyro-std()-X          
+- tBodyGyro\_std\_X          
    NUMERIC: GYROSCOPE X AXIAL SIGNAL - STANDARD DEVIATION
 
-- tBodyGyro-std()-Y           
+- tBodyGyro\_std\_Y           
    NUMERIC: GYROSCOPE Y AXIAL SIGNAL - STANDARD DEVIATION
 
-- tBodyGyro-std()-Z          
+- tBodyGyro\_std\_Z          
    NUMERIC: GYROSCOPE Z AXIAL SIGNAL - STANDARD DEVIATION
 
-- tBodyGyroJerk-mean()-X      
+- tBodyGyroJerk\_mean\_X      
    NUMERIC: GYROSCOPE X AXIAL SIGNAL DERIVATION IN TIME - MEAN
     
-- tBodyGyroJerk-mean()-Y     
+- tBodyGyroJerk\_mean\_Y     
    NUMERIC: GYROSCOPE Y AXIAL SIGNAL DERIVATION IN TIME - MEAN
 
-- tBodyGyroJerk-mean()-Z      
+- tBodyGyroJerk\_mean\_Z      
    NUMERIC: GYROSCOPE Z AXIAL SIGNAL DERIVATION IN TIME - MEAN
 
-- tBodyGyroJerk-std()-X      
+- tBodyGyroJerk\_std\_X         
    NUMERIC: GYROSCOPE X AXIAL SIGNAL DERIVATION IN TIME - STANDARD DEVIATION
 
-- tBodyGyroJerk-std()-Y       
+- tBodyGyroJerk\_std\_Y        
    NUMERIC: GYROSCOPE Y AXIAL SIGNAL DERIVATION IN TIME - STANDARD DEVIATION
 
-- tBodyGyroJerk-std()-Z    
+- tBodyGyroJerk\_std\_Z      
    NUMERIC: GYROSCOPE Z AXIAL SIGNAL DERIVATION IN TIME - STANDARD DEVIATION
       
-- tBodyAccMag-mean()          
+- tBodyAccMag\_mean          
    NUMERIC: BODY ACCELEROMETER MAGNITUDE (EUCLIDEAN NORM) - MEAN    
 
-- tBodyAccMag-std()          
+- tBodyAccMag\_std          
    NUMERIC: BODY ACCELEROMETER MAGNITUDE (EUCLIDEAN NORM) - STANDARD DEVIATION    
 
-- tGravityAccMag-mean()    
+- tGravityAccMag\_mean    
    NUMERIC: GRAVITY ACCELEROMETER MAGNITUDE (EUCLIDEAN NORM) - MEAN    
       
-- tGravityAccMag-std()   
+- tGravityAccMag\_std     
   NUMERIC: GRAVITY ACCELEROMETER MAGNITUDE (EUCLIDEAN NORM) - STANDARD DEVIATION    
        
-- tBodyAccJerkMag-mean()   
+- tBodyAccJerkMag\_mean       
    NUMERIC: BODY ACCELEROMETER MAGNITUDE DERIVATION IN TIME - MEAN    
       
-- tBodyAccJerkMag-std()      
+- tBodyAccJerkMag\_std      
    NUMERIC: BODY ACCELEROMETER MAGNITUDE DERIVATION IN TIME - STANDARD DEVIATION    
 
-- tBodyGyroMag-mean()         
+- tBodyGyroMag\_mean         
    NUMERIC: GYROSCOPE MAGNITUDE (EUCLIDEAN NORM) - MEAN    
 
-- tBodyGyroMag-std()         
+- tBodyGyroMag\_std         
    NUMERIC: GYROSCOPE MAGNITUDE (EUCLIDEAN NORM) - STANDARD DEVIATION    
 
-- tBodyGyroJerkMag-mean()     
+- tBodyGyroJerkMag\_mean     
    NUMERIC: GYROSCOPE MAGNITUDE DERIVATION IN TIME - MEAN    
 
-- tBodyGyroJerkMag-std()     
+- tBodyGyroJerkMag\_std     
    NUMERIC: GYROSCOPE MAGNITUDE DERIVATION IN TIME - STANDARD DEVIATION    
 
-- fBodyAcc-mean()-X           
+- fBodyAcc\_mean\_X           
    NUMERIC: BODY ACCELEROMETER X SIGNAL FAST FOURIER TRANSFORM (FFT) - MEAN
 
-- fBodyAcc-mean()-Y          
+- fBodyAcc\_mean\_Y          
    NUMERIC: BODY ACCELEROMETER Y SIGNAL FAST FOURIER TRANSFORM (FFT) - MEAN
 
-- fBodyAcc-mean()-Z           
+- fBodyAcc\_mean\_Z           
    NUMERIC: BODY ACCELEROMETER Z SIGNAL FAST FOURIER TRANSFORM (FFT) - MEAN
 
-- fBodyAcc-std()-X  
+- fBodyAcc\_std\_X  
    NUMERIC: BODY ACCELEROMETER X SIGNAL FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION
            
-- fBodyAcc-std()-Y            
+- fBodyAcc\_std\_Y            
    NUMERIC: BODY ACCELEROMETER Y SIGNAL FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION
 
-- fBodyAcc-std()-Z    
+- fBodyAcc\_std\_Z    
    NUMERIC: BODY ACCELEROMETER Z SIGNAL FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION
           
-- fBodyAccJerk-mean()-X       
+- fBodyAccJerk\_mean\_X       
    NUMERIC: BODY ACCELEROMETER X SIGNAL DERIVATION IN TIME FAST FOURIER TRANFORM (FFT) - MEAN    
 
-- fBodyAccJerk-mean()-Y      
+- fBodyAccJerk\_mean\_Y      
    NUMERIC: BODY ACCELEROMETER Y SIGNAL DERIVATION IN TIME FAST FOURIER TRANFORM (FFT) - MEAN    
 
-- fBodyAccJerk-mean()-Z       
+- fBodyAccJerk\_mean\_Z       
    NUMERIC: BODY ACCELEROMETER Z SIGNAL DERIVATION IN TIME FAST FOURIER TRANFORM (FFT) - MEAN    
 
-- fBodyAccJerk-std()-X       
+- fBodyAccJerk\_std\_X       
    NUMERIC: BODY ACCELEROMETER X SIGNAL DERIVATION IN TIME FAST FOURIER TRANFORM (FFT) - STANDARD DEVIATION    
 
-- fBodyAccJerk-std()-Y        
+- fBodyAccJerk\_std\_Y        
    NUMERIC: BODY ACCELEROMETER Y SIGNAL DERIVATION IN TIME FAST FOURIER TRANFORM (FFT) - STANDARD DEVIATION    
 
-- fBodyAccJerk-std()-Z   
+- fBodyAccJerk\_std\_Z   
    NUMERIC: BODY ACCELEROMETER Z SIGNAL DERIVATION IN TIME FAST FOURIER TRANFORM (FFT) - STANDARD DEVIATION    
        
-- fBodyGyro-mean()-X          
+- fBodyGyro\_mean\_X          
    NUMERIC: GYROSCOPE X SIGNAL FAST FOURIER TRANSFORM (FFT) - MEAN
 
-- fBodyGyro-mean()-Y           
+- fBodyGyro\_mean\_Y           
    NUMERIC: GYROSCOPE Y SIGNAL FAST FOURIER TRANSFORM (FFT) - MEAN
 
-- fBodyGyro-mean()-Z          
+- fBodyGyro\_mean\_Z          
    NUMERIC: GYROSCOPE Z SIGNAL FAST FOURIER TRANSFORM (FFT) - MEAN
 
-- fBodyGyro-std()-X          
+- fBodyGyro\_std\_X          
    NUMERIC: GYROSCOPE X SIGNAL FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION
 
-- fBodyGyro-std()-Y           
+- fBodyGyro\_std\_Y           
    NUMERIC: GYROSCOPE Y SIGNAL FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION
 
-- fBodyGyro-std()-Z          
+- fBodyGyro\_std\_Z          
    NUMERIC: GYROSCOPE Z SIGNAL FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION
 
-- fBodyAccMag-mean()          
+- fBodyAccMag\_mean          
    NUMERIC: BODY ACCELEROMETER MAGNITUDE FAST FOURIER TRANSFORM (FFT) - MEAN    
 
-- fBodyAccMag-std()    
+- fBodyAccMag\_std    
    NUMERIC: BODY ACCELEROMETER MAGNITUDE FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION    
 
-- fBodyBodyAccJerkMag-mean()     
+- fBodyBodyAccJerkMag\_mean     
    NUMERIC: BODY ACCELEROMETER MAGNITUDE DERIVATION IN TIME FAST FOURIER TRANSFORM (FFT) - MEAN    
 
-- fBodyBodyAccJerkMag-std()        
+- fBodyBodyAccJerkMag\_std        
    NUMERIC: BODY ACCELEROMETER MAGNITUDE DERIVATION IN TIME FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION    
 
-- fBodyBodyGyroMag-mean()   
+- fBodyBodyGyroMag\_mean   
    NUMERIC: GYROSCOPE MAGNITUDE FAST FOURIER TRANSFORM (FFT) - MEAN    
  
-- fBodyBodyGyroMag-std()     
+- fBodyBodyGyroMag\_std     
    NUMERIC: GYROSCOPE MAGNITUDE FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION    
 
-- fBodyBodyGyroJerkMag-mean()     
+- fBodyBodyGyroJerkMag\_mean     
    NUMERIC: GYROSCOPE MAGNITUDE DERIVATION IN TIME FAST FOURIER TRANSFORM (FFT) - MEAN    
 
-- fBodyBodyGyroJerkMag-std()    
+- fBodyBodyGyroJerkMag\_std    
    NUMERIC: GYROSCOPE MAGNITUDE DERIVATION IN TIME FAST FOURIER TRANSFORM (FFT) - STANDARD DEVIATION    
 

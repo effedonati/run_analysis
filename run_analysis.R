@@ -45,8 +45,11 @@ run_analysis<-function(writemeans=FALSE) {
   dset<-mutate(dset,Activity=actdesc[Activity,2],Subject=paste("Subject",Subject,sep="_"))
   
   #extract only  the measurements on the mean and standard deviation
-  dset<-dset[,grep("Subject|Activity|mean.)|std.",names(dset))]
+  dset<-dset[,grep("Subject|Activity|mean.)|std.)",names(dset))]
   
+  #change the names of columns(eliminate parenthesis and substitute "-" with "_" )
+  tmpnames<-gsub(".)","",names(dset))
+  names(dset)<-gsub("-","_",tmpnames)
   # create the data set with the average of each variable for each 
   # activity and each subject.
   dsetmeans<-lapply(dset[,3:68],function(x) tapply(x,list(dset$Activity,dset$Subject),mean))
