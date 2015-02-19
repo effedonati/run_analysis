@@ -3,8 +3,6 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
 
 ##(Project of Coursera's Getting and Clearing Data Course)
 
-
-
 - Subject    
    INTEGER: FROM 1 TO 30, IDENTIFIES THE VOLUNTEER
                      

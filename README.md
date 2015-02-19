@@ -36,7 +36,7 @@ FUNCTION USAGE:
 
 REQUIRED:
 
- the function expect the Samsung data directory (UCI HAR Dataset) to be on the working directory.
+ the function expect the Samsung data directory (UCI HAR Dataset) to be in the working directory.
   
 
 -------------------------------------------------  
@@ -63,4 +63,4 @@ transform Activity codes to strings (from activity_labels.txt).
 Then select only the columns relevant to our dataset (means ans standard deviations; i have considered relevant only the columns wich end in mean(),std(),mean()-XYZ,std()-XYZ).
 
 If the function parameter writemeans is set to TRUE (default is FALSE),
-an independent data set is created with the average of each variable for each activity and each subject and then is saved with a write.table in the current directory as "datasetmeans.txt".
+an independent data set is created with the average of each variable for each activity and each subject and then is saved with a write.table (with row.names=FALSE as required) in the current directory as "datasetmeans.txt".

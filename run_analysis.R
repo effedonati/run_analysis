@@ -1,3 +1,16 @@
+##
+## run_analysis()                                               
+## a function wich construct a tidy dataset from the 
+## Samsung Human Activity Recognition Using Smartphones Dataset
+##
+## USAGE:
+## x<-run_analysis()                 # assign to x the dataset created from the Samsung data
+## x<-run_analysis(TRUE)             # or
+## x<-run_analysis(writemeans=TRUE)  # as above,but create a file "datasetmeans.txt" with 
+##                                   # the average of each variable for each activity and 
+##                                   # each subject   
+##
+
 run_analysis<-function(writemeans=FALSE) {
   library(plyr)
   
