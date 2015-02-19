@@ -14,8 +14,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 Into this repo you can find:  
 
   - this file, __README.md__
-  - the R script file, __run_analysis.R__
   - the CodeBook file, __CodeBook.md__
+  - the R script file, __run_analysis.R__
 
 __CodeBook.md__ contain an explanation of the data columns.
 
