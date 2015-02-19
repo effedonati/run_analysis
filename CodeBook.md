@@ -4,8 +4,7 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
 ##(Project of Coursera's Getting and Clearing Data Course)
 --------------------------------------------------
 
- ### NOTE: all fields are the average of each sample grouped by activity and  subject;
- ### so if the dataset is stored in the var x 
+ __NOTE:__ all fields are the average of each sample grouped by activity and  subject;
 
 --------------------------------------------------
 - Subject    
