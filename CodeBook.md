@@ -2,14 +2,12 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
 ============================================================================================
 
 ##(Project of Coursera's Getting and Clearing Data Course)
+
 --------------------------------------------------
 
  __NOTE:__ all fields are the average of each sample grouped by activity and  subject;
 
 --------------------------------------------------
-- Subject    
-   STRING: FROM Subject\_1 TO Subject\_30, IDENTIFIES THE VOLUNTEER
-                     
 - Activity    
    STRING: TYPE OF ACTIVITY - CAN BE ONE OF
      - WALKING
@@ -19,6 +17,9 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
      - STANDING
      - LAYING
            
+- Subject    
+   STRING: FROM Subject\_1 TO Subject\_30, IDENTIFIES THE VOLUNTEER
+                     
 - tBodyAcc\_mean\_X   
    NUMERIC: BODY ACCELEROMETER X AXIAL SIGNAL - MEAN
          
