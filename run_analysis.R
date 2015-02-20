@@ -13,7 +13,7 @@
 ##
 
 run_analysis<-function(writemeans=FALSE) {
-  library(plyr)
+  library(dplyr)
   
   # test if data directory is present
   if(!file.exists("./UCI HAR Dataset")) {
@@ -42,7 +42,7 @@ run_analysis<-function(writemeans=FALSE) {
   
   # substitute activity code with description
   actdesc<-read.table("./UCI HAR Dataset/activity_labels.txt")
-  dset<-mutate(dset,Activity=actdesc[Activity,2],Subject=paste("Subject",Subject,sep="_"))
+  dset<-plyr::mutate(dset,Activity=actdesc[Activity,2])
   
   #extract only  the measurements on the mean and standard deviation
   dset<-dset[,grep("Subject|Activity|mean.)|std.)",names(dset))]
@@ -50,11 +50,14 @@ run_analysis<-function(writemeans=FALSE) {
   #change the names of columns(eliminate parenthesis and substitute "-" with "_" )
   tmpnames<-gsub(".)","",names(dset))
   names(dset)<-gsub("-","_",tmpnames)
+  
   # create the data set with the average of each variable for each 
   # activity and each subject.
-  dsetmeans<-lapply(dset[,3:68],function(x) tapply(x,list(dset$Activity,dset$Subject),mean))
-
-  # if the function parameter "wtitemeans" is TRUE (default is FALSE) save the dataset
+  dset<-arrange(dset,Subject,Activity)
+  dsetmeans<-aggregate(dset[,3:68],list(dset$Activity,dset$Subject),mean)
+  names(dsetmeans)[1:2]<-c("Activity","Subject")
+  
+  #if the function parameter "wtitemeans" is TRUE (default is FALSE) save the dataset
   if(writemeans) {
       write.table(dsetmeans,file="./datasetmeans.txt",row.names=FALSE)
   }
