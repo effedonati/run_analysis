@@ -18,7 +18,7 @@ Code Book for the dataset obtained from Human Activity Recognition Using Smartph
      - LAYING
            
 - Subject    
-   STRING: FROM Subject\_1 TO Subject\_30, IDENTIFIES THE VOLUNTEER
+   INTEGER: FROM 1 TO 30, IDENTIFIES THE VOLUNTEER CODE
                      
 - tBodyAcc\_mean\_X   
    NUMERIC: BODY ACCELEROMETER X AXIAL SIGNAL - MEAN
